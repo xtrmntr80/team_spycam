@@ -135,3 +135,25 @@ button:hover, .btn:hover {
         min-width: 360px;
     }
 }
+
+/*----------ver.05追記部分--------*/
+
+/* 気温の表示 */
+#TempBox .valueBox::before {
+    content: "気温:";
+}
+
+#TempBox .valueBox::after {
+    content: "℃";
+}
+
+/* 湿度の表示 */
+#HumiBox .valueBox::before {
+    content: "湿度:";
+}
+
+#HumiBox .valueBox::after {
+    content: "％";
+}
+
+
