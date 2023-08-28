@@ -5,38 +5,41 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    line-height: 1.6;
+    text-align: center;
 }
 
 article {
-	width: 610px;
+    max-width: 800px;
+    width: 610px;
+    margin: 20px auto;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin: 20px auto;
 }
 
 h2 {
-    background-color: #333;
+    background-color: #007BFF;
     color: #fff;
     padding: 10px 0;
     text-align: center;
     margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
     border-radius: 5px;
 }
 
 hr {
     border: 0;
+    height: 1px;
+    background-color: #e1e1e1;
     border-top: 3px solid #eee;
     margin: 20px 0;
 }
 
 /* ボタン設定 */
-button {
+button, .btn {
     background-color: #007BFF;
     border: none;
     color: #fff;
@@ -44,68 +47,91 @@ button {
     margin: 5px;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
-button:hover {
+button:hover, .btn:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 /* ライブ映像枠 */
 #liveImageBox {
-	text-align: center;
-	padding: 0;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
 }
 
-#liveImageBox img {
-	margin-bottom: 10px;
+#liveImageBox img, #liveImage {
+    margin-bottom: 10px;
+    max-width: 100%;
     border-radius: 5px;
 }
 
 /* スイッチボックス */
-#SwitchBox, #AltBtnBox {
-	display: inline-block;
-	padding: 0;
-	margin: 0;
+#SwitchBox, #AltBtnBox, #AirBtnBox, #LightBtnBox {
+    display: inline-block;
     text-align: center;
+    margin-bottom: 20px;
+    padding: 0;
 }
 
-.Btn {
-	width: 160px;
+.Btn, .btn {
+    width: 160px;
 }
 
 /* ラベルと値のボックス */
 .labelBox, .valueBox {
-	display: inline-block;
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 #MsgBox {
-	width: 100%;
-	color: white;
-	margin: 0;
-	text-align: center;
-	padding: 0;
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
 }
 
 .MsgTextRed {
-	background: red;
+    background: red;
     padding: 5px;
     border-radius: 5px;
 }
 
 .MsgTextGreen {
-	background: green;
+    background: green;
     padding: 5px;
     border-radius: 5px;
+    color: #2ecc71;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.redText {
+    color: #e74c3c;
+}
+
+.yellowText {
+    color: #f39c12;
+}
+
+.blueText {
+    color: #3498db;
 }
 
 /* レスポンシブ対応 */
-@media screen and (max-width:640px) { 
-	article {
-		width: 100%;
-		min-width: 360px;
-	}
-    /* 以下、他のスタイルも同様に変更しています */
+@media screen and (max-width:640px) {
+    article {
+        width: 100%;
+        min-width: 360px;
+    }
 }
-
-/* その他のスタイルは、提供されたものをそのまま使用しています */
