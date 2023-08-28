@@ -5,15 +5,19 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 article {
 	width: 610px;
-    margin: 20px auto;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    margin: 20px auto;
 }
 
 h2 {
@@ -24,24 +28,6 @@ h2 {
     margin-top: 0;
     border-radius: 5px;
 }
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-h2 {
-    background-color: #007BFF; /* 変更: スタイリッシュな背景色に変更 */
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    margin-top: 0;
-}
-
-
 
 hr {
     border: 0;
@@ -64,25 +50,6 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-
-button {
-    background-color: #007BFF;
-    border: none;
-    color: #fff;
-    padding: 10px 15px;
-    margin: 5px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    font-size: 1rem; /* 追加: フォントサイズを指定 */
-    font-weight: bold; /* 追加: フォントの太さを指定 */
-}
-
-/* 変更: ボタンのホバー時の背景色を変更 */
-button:hover {
-    background-color: #0056b3;
-}
-
 
 /* ライブ映像枠 */
 #liveImageBox {
