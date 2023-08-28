@@ -7,8 +7,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 		<title><?php echo $pageTitle; ?></title>
-		<link rel="stylesheet" type="text/css" href="./main.css">
-		<link rel="stylesheet" type="text/css" href="./04_02_scamera.css">
+		<link rel="stylesheet" type="text/css" href="./scamera_6_1.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="./_js/function_product.js"></script>
 	</head>
@@ -52,6 +51,12 @@
 			<section id="AirBtnBox">
 				<button class="Btn" onclick="RedLedOnAjax()">エアコンON</button>
 				<button class="Btn" onclick="RedLedOffAjax()">エアコンOFF</button>				
+			</section>
+
+			<!-- エアコン温度調整枠 -->
+			<section id="AirTmpBox">
+				<label>設定温度:<input id="tempVal" type="number" name="example" min="16" max="30" value="27"></label>
+				<button id="AirBtn" onclick="AirTempAjax()">送信</button>
 			</section>
 
 			<!---照明スイッチ枠 -->
