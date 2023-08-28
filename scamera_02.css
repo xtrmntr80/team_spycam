@@ -1,0 +1,144 @@
+/* 基本設定 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+article {
+	width: 610px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 0;
+    border-radius: 5px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    background-color: #007BFF; /* 変更: スタイリッシュな背景色に変更 */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+
+hr {
+    border: 0;
+    border-top: 3px solid #eee;
+    margin: 20px 0;
+}
+
+/* ボタン設定 */
+button {
+    background-color: #007BFF;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button {
+    background-color: #007BFF;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem; /* 追加: フォントサイズを指定 */
+    font-weight: bold; /* 追加: フォントの太さを指定 */
+}
+
+/* 変更: ボタンのホバー時の背景色を変更 */
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* ライブ映像枠 */
+#liveImageBox {
+	text-align: center;
+	padding: 0;
+}
+
+#liveImageBox img {
+	margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* スイッチボックス */
+#SwitchBox, #AltBtnBox {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+    text-align: center;
+}
+
+.Btn {
+	width: 160px;
+}
+
+/* ラベルと値のボックス */
+.labelBox, .valueBox {
+	display: inline-block;
+}
+
+#MsgBox {
+	width: 100%;
+	color: white;
+	margin: 0;
+	text-align: center;
+	padding: 0;
+}
+
+.MsgTextRed {
+	background: red;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.MsgTextGreen {
+	background: green;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width:640px) { 
+	article {
+		width: 100%;
+		min-width: 360px;
+	}
+    /* 以下、他のスタイルも同様に変更しています */
+}
+
+/* その他のスタイルは、提供されたものをそのまま使用しています */
